@@ -1,0 +1,254 @@
+@keyframes middle-body-slouch {
+    0% {
+        transform: rotate(-10deg);
+        translate: 20px;
+    }
+    /*40% {
+        transform: rotate(0deg);
+        translate: 0px 10px;
+    }*/
+    /*40% {
+        transform: rotate(10deg);
+    }*/
+    80% {
+        transform: rotate(15deg);
+        translate: -40px 10px;
+    }
+    /*75% {
+        transform: rotate(10deg);
+    }*/
+    /*90% {
+        transform: rotate(0deg);
+    }*/
+    /*95% {
+        transform: rotate(-5deg);
+    }*/
+    100% {
+        transform: rotate(-10deg);
+        translate: 20px;
+    }
+}
+
+#middle-body {
+    transform-box: fill-box;
+    transform-origin: bottom center;
+    rotate: -10deg;
+    translate: 20px;
+    animation: middle-body-slouch 4s ease-in-out infinite;
+}
+
+@keyframes bottom-l-slouch {
+    0% {
+        rotate: -10deg;
+        translate: 30px 15px;
+    }
+    80% {
+        rotate: -5deg;
+        translate: 0px 5px;
+    }
+    100% {
+        rotate: -10deg;
+        translate: 30px 15px;
+    }
+}
+
+#bottom-l {
+    transform-box: fill-box;
+    transform-origin: bottom center;
+    rotate: -10deg;
+    translate: 30px 15px;
+    animation: bottom-l-slouch 4s ease-in-out infinite;
+}
+
+@keyframes bottom-r-slouch {
+    0% {
+        rotate: -10deg;
+        translate: 50px 15px;
+    }
+    80% {
+        rotate: 0deg;
+        translate: 30px 0px;
+    }
+    100% {
+        rotate: -10deg;
+        translate: 50px 15px;
+    }
+}
+
+#bottom-r {
+    transform-box: fill-box;
+    transform-origin: bottom center;
+    rotate: -10deg;
+    translate: 50px 15px;
+    animation: bottom-r-slouch 4s ease-in-out infinite;
+}
+#head {
+    transform-origin: 50% 90%;
+}
+
+#hand-r {
+    transform-origin: 90% 20%;
+}
+
+#hand-l {
+    transform-origin: 10% 20%;
+}
+
+#leg-r {
+    transform-origin: 80% 0%;
+}
+
+#leg-l {
+    transform-origin: 20% 0%;
+}
+
+@keyframes chairTilt {
+    0% {
+        transform: rotate(0deg);
+        translate: -5px;
+    }
+    80% {
+        transform: rotate(6deg);
+        translate: -20px;
+    }
+    100% {
+        transform: rotate(0deg);
+        translate: -5px;
+    }
+}
+
+#chair-back {
+    transform-origin: bottom right;
+    animation: chairTilt 4s ease-in-out infinite;
+}
+
+@keyframes shoes-r-rotate {
+    0% {
+        rotate: 20deg;
+    }
+    80% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 20deg;
+    }
+}
+
+#shoes-r {
+    transform-origin: 50px 250px;
+    animation: shoes-r-rotate 4s ease-in-out infinite;
+}
+
+@keyframes shoes-l-rotate {
+    0% {
+        rotate: 0deg;
+    }
+    80% {
+        rotate: 20deg;
+    }
+    100% {
+        rotate: 0deg;
+    }
+}
+
+#shoes-l {
+    transform-origin: 90px 280px;
+    animation: shoes-l-rotate 4s ease-in-out infinite;
+}
+
+@keyframes hand-l-rotate {
+    0% {
+        rotate: 15deg;
+        translate: -10px 20px;
+    }
+    60% {
+        rotate: 5deg;
+        translate: -10px 10px;
+    }
+    80% {
+        rotate: 5deg;
+    }
+    100% {
+        rotate: 15deg;
+        translate: -10px 20px;
+    }
+}
+
+#hand-l {
+    transform-origin: center right;
+    rotate: 15deg;
+    translate: -10px 20px;
+    animation: hand-l-rotate 4s ease-in-out infinite;
+}
+
+@keyframes hand-r-rotate {
+    0% {
+        rotate: 15deg;
+        translate: -2px 28px;
+    }
+    40% {
+        rotate: 10deg;
+        translate: -2px 20px;
+    }
+    80% {
+        rotate: -1deg;
+        translate: -2px 0px;
+    }
+    100% {
+        rotate: 15deg;
+        translate: -2px 28px;
+    }
+}
+
+#hand-r {
+    transform-origin: center right;
+    rotate: 15deg;
+    translate: -2px 28px;
+    animation: hand-r-rotate 4s ease-in-out infinite;
+}
+
+@keyframes top-body-rotate {
+    0%,
+    100% {
+        rotate: 0;
+        translate: 0;
+    }
+    65% {
+        rotate: 20deg;
+        translate: -60px -50px;
+    }
+    80% {
+        rotate: 25deg;
+        translate: -75px -65px;
+    }
+}
+
+#top-body {
+    transform-origin: bottom center;
+    animation: top-body-rotate 4s ease-in-out infinite;
+}
+
+@keyframes front-leg {
+    0%,
+    100% {
+        translate: 0px;
+        rotate: 0px;
+    }
+}
+
+@keyframes chair-slide {
+    0%,
+    20%,
+    100% {
+        translate: 0px;
+    }
+    50%,
+    80% {
+        translate: 5px;
+    }
+}
+
+#chair,
+#chair-front-handle {
+    animation: chair-slide 4s ease-in-out infinite;
+}
