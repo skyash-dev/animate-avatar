@@ -10,7 +10,7 @@
     /*40% {
         transform: rotate(10deg);
     }*/
-    80% {
+    90% {
         transform: rotate(15deg);
         translate: -40px 10px;
     }
@@ -34,7 +34,7 @@
     transform-origin: bottom center;
     rotate: -10deg;
     translate: 20px;
-    animation: middle-body-slouch 4s ease-in-out infinite;
+    animation: middle-body-slouch 6s ease-in-out infinite;
 }
 
 @keyframes bottom-l-slouch {
@@ -42,7 +42,7 @@
         rotate: -10deg;
         translate: 30px 15px;
     }
-    80% {
+    90% {
         rotate: -5deg;
         translate: 0px 5px;
     }
@@ -57,7 +57,7 @@
     transform-origin: bottom center;
     rotate: -10deg;
     translate: 30px 15px;
-    animation: bottom-l-slouch 4s ease-in-out infinite;
+    animation: bottom-l-slouch 6s ease-in-out infinite;
 }
 
 @keyframes bottom-r-slouch {
@@ -65,7 +65,7 @@
         rotate: -10deg;
         translate: 50px 15px;
     }
-    80% {
+    90% {
         rotate: 0deg;
         translate: 30px 0px;
     }
@@ -80,7 +80,7 @@
     transform-origin: bottom center;
     rotate: -10deg;
     translate: 50px 15px;
-    animation: bottom-r-slouch 4s ease-in-out infinite;
+    animation: bottom-r-slouch 6s ease-in-out infinite;
 }
 #head {
     transform-origin: 50% 90%;
@@ -107,7 +107,7 @@
         transform: rotate(0deg);
         translate: -5px;
     }
-    80% {
+    90% {
         transform: rotate(6deg);
         translate: -20px;
     }
@@ -119,14 +119,14 @@
 
 #chair-back {
     transform-origin: bottom right;
-    animation: chairTilt 4s ease-in-out infinite;
+    animation: chairTilt 6s ease-in-out infinite;
 }
 
 @keyframes shoes-r-rotate {
     0% {
         rotate: 20deg;
     }
-    80% {
+    90% {
         rotate: 0deg;
     }
     100% {
@@ -136,14 +136,14 @@
 
 #shoes-r {
     transform-origin: 50px 250px;
-    animation: shoes-r-rotate 4s ease-in-out infinite;
+    animation: shoes-r-rotate 6s ease-in-out infinite;
 }
 
 @keyframes shoes-l-rotate {
     0% {
         rotate: 0deg;
     }
-    80% {
+    90% {
         rotate: 20deg;
     }
     100% {
@@ -153,7 +153,7 @@
 
 #shoes-l {
     transform-origin: 90px 280px;
-    animation: shoes-l-rotate 4s ease-in-out infinite;
+    animation: shoes-l-rotate 6s ease-in-out infinite;
 }
 
 @keyframes hand-l-rotate {
@@ -178,7 +178,7 @@
     transform-origin: center right;
     rotate: 15deg;
     translate: -10px 20px;
-    animation: hand-l-rotate 4s ease-in-out infinite;
+    animation: hand-l-rotate 6s ease-in-out infinite;
 }
 
 @keyframes hand-r-rotate {
@@ -204,7 +204,7 @@
     transform-origin: center right;
     rotate: 15deg;
     translate: -2px 28px;
-    animation: hand-r-rotate 4s ease-in-out infinite;
+    animation: hand-r-rotate 6s ease-in-out infinite;
 }
 
 @keyframes top-body-rotate {
@@ -225,7 +225,7 @@
 
 #top-body {
     transform-origin: bottom center;
-    animation: top-body-rotate 4s ease-in-out infinite;
+    animation: top-body-rotate 6s ease-in-out infinite;
 }
 
 @keyframes front-leg {
@@ -250,5 +250,5 @@
 
 #chair,
 #chair-front-handle {
-    animation: chair-slide 4s ease-in-out infinite;
+    animation: chair-slide 6s ease-in-out infinite;
 }
